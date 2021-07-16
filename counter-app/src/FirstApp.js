@@ -1,15 +1,22 @@
+import PropTypes from 'prop-types';
 
+const FirstApp = ({hello, subtitle})=>{
 
-const FirstApp = ({hello = 'Hello Word'})=>{
-    
     return(
         <>
             <h1>{hello}</h1>
             {/* <h1>{JSON.stringify(hello, null, 3)}</h1> */}
-            <p>Mi primera app</p>
+            <p>{subtitle}</p>
         </>
     );
     
 }
 
+FirstApp.propTypes = {
+    hello: PropTypes.string.isRequired
+}
+
+FirstApp.defaultProps = {
+    subtitle: 'hey i am Carlos'
+}
 export default FirstApp
