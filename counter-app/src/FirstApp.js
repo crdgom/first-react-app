@@ -17,6 +17,6 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    subtitle: 'hey i am Carlos'
+    subtitle: 'This is a subtitle'
 }
 export default FirstApp
