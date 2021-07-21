@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FirstApp module Test First real test with enzyme test library 1`] = `
+<Fragment>
+  <h1>
+    Hola, soy Carlos
+  </h1>
+  <p>
+    This is a subtitle
+  </p>
+</Fragment>
+`;
