@@ -16,12 +16,12 @@ exports[`Testing for CounterApp component Must show default value defined in Cou
   <button
     onClick={[Function]}
   >
-    -1
+    Reset
   </button>
   <button
     onClick={[Function]}
   >
-    Reset
+    -1
   </button>
 </Fragment>
 `;
