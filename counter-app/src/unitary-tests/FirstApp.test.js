@@ -16,4 +16,15 @@ describe('FirstApp module Test',()=>{
         const wrapper = shallow(<FirstApp hello = {hello}/>)
         expect(wrapper).toMatchSnapshot();
     })
+    test('must show the paragraph with the subtitle', ()=>{
+        const hello = 'Hola, soy Carlos';
+        const subtitle ='This is a subtitle'
+        const wrapper = shallow(
+            <FirstApp
+                hello = {hello}
+                subtitle={subtitle}
+            />)
+        const paragraph = wrapper.find('p').text() 
+        expect(paragraph).toBe(subtitle);
+    })
 })
